@@ -1,0 +1,225 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: #020617;
+        color: #e5e7eb;
+    }
+
+    /* navbar */
+    .navbar {
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 70px;
+        background: #0f172a;
+        color: white;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 34px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    .nav-links a:hover {
+        color: mediumpurple;
+    }
+
+    .btn {
+        padding: 8px 18px;
+        border: none;
+        background: mediumpurple;
+        color: black;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: blanchedalmond;
+    }
+
+    /* hero */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 90px 90px;
+        gap: 70px;
+        position: relative;
+    }
+
+    .hero-text {
+        max-width: 520px;
+        position: relative;
+
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        margin-bottom: 18px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 28px;
+        color: #94a3b8;
+    }
+
+    .hero img {
+        width: 320px;
+        border-radius: 22px;
+        position: relative;
+    }
+
+    .divider {
+        height: 1px;
+        margin: 20px 90px;
+
+    }
+
+    /* section style */
+    section {
+        background: #0f172a;
+        margin: 70px;
+        padding: 90px 80px;
+        border-radius: 34px;
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(190, 92, 190);
+        font-size: 38px;
+        margin-bottom: 60px;
+    }
+
+    /* skills */
+    .skills-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .skill {
+        padding: 18px 40px;
+        border-radius: 16px;
+        border: 1px solid mediumpurple;
+        transition: 0.3s;
+    }
+
+    .skill:hover {
+        background: mediumpurple;
+        transform: translateY(-6px);
+    }
+
+    /* projects */
+    .projects-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .project {
+        width: 260px;
+        background: #020617;
+        padding: 38px;
+        border-radius: 20px;
+        border-top: 4px solid mediumpurple;
+        transition: 0.3s;
+    }
+
+    .project:hover {
+        transform: translateY(-12px);
+    }
+
+    /* contact */
+    form {
+        max-width: 420px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+    }
+
+    input,
+    textarea {
+        padding: 14px;
+        border-radius: 8px;
+        border: none;
+        font-size: 15px;
+
+    }
+
+    #name:hover {
+        background: blanchedalmond;
+    }
+
+    #email:hover {
+        background: blanchedalmond;
+    }
+
+    #number:hover {
+        background: blanchedalmond;
+    }
+
+    #message:hover {
+        background: blanchedalmond;
+    }
+
+    footer {
+        text-align: center;
+        padding: 50px;
+        color: #94a3b8;
+    }
+
+    /* responsiveness */
+    @media(max-width:900px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+            padding: 80px 30px;
+        }
+
+        .hero img {
+            width: 240px;
+        }
+
+        .navbar {
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 18px 30px;
+        }
+
+        section {
+            margin: 25px;
+            padding: 70px 30px;
+        }
+
+        .divider {
+            margin: 20px 30px;
+        }
+    }
