@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <link rel="stylesheet" href="style.css"></a>
+    <title>Vasudha Saikar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
     <header class="navbar">
@@ -16,69 +15,80 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contacts</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <button class="btn">HIRE ME!!</button>
+        <a class="btn" href="#contact">HIRE ME!!</a>
     </header>
+
     <section class="hero" id="home">
         <div class="hero-text">
-            <h1>Hello , IT'S VASUDHA</h1>
-            <p>I am leraning web development and building
-                mordern responsive websites using HTML and CSS.
-                I love creating clean layouts that looks professional
+            <h1>Hello, I am Vasudha </h1>
+            <p>
+                I am learning web development and building modern responsive websites using HTML and CSS.
+                I love creating clean layouts that look professional.
             </p>
-            <a href="#" class="btn">Download cv</a>
+            <div class="hero-actions">
+                <a href="#" class="btn">Download CV</a>
+                <a href="#projects" class="btn">My Work</a>
+            </div>
         </div>
-        <img src="my photo.jpeg" alt="profile">
+        <img src="professional photo.jpeg" alt="Vasudha Saikar profile photo">
     </section>
+
     <div class="divider"></div>
+
     <section id="skills">
-        <h2>My skills</h2>
+        <h2 class="section-heading">Skills</h2>
         <div class="skills-grid">
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
             <div class="skill">FLEXBOX</div>
             <div class="skill">RESPONSIVE DESIGN</div>
-            <div class="skill">GIT & GITHUB</div>
+            <div class="skill">GIT &amp; GITHUB</div>
+            <div class="skill">VIDEO EDITING</div>
         </div>
-    </section>
-    <section id="projects">
-        <h2>MY PROJECTS</h2>
-        <div class="projects-grid">
-            <div class="project">portfolio website</div>
-            <div class="project">landing Page</div>
-            <div class="project">mini web app</div>
 
+    </section>
+
+    <section id="projects">
+        <h2 class="section-heading">Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio to showcase my skills, projects, and contact details.</p>
+            </div>
+            <div class="project">
+                <h3>Landing Page</h3>
+                <p>A clean and responsive landing page design for a product or service.</p>
+            </div>
+            <div class="project">
+                <h3>Mini Web App</h3>
+                <p>A simple front-end app layout focused on usability and responsive structure.</p>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>CONTACT ME</h2>
-        <form>
+        <h2 class="section-heading">Contact</h2>
+        <form id="contact-form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your name">
+            <input type="text" id="name" name="name" placeholder="Your name" required>
 
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Your email">
+            <input type="email" id="email" name="email" placeholder="Your email" required>
 
-            <label for="number">Phone number:</label>
-            <input type="tel" id="number" name="number" placeholder="Your phone number">
+            <label for="message">Message:</label>
+            <textarea rows="4" id="message" name="message" placeholder="Write your message here" required></textarea>
 
-            <label for="message">Client details:</label>
-            <textarea rows="4" id="message" placeholder="Write your message here"></textarea>
-            <a href="#" class="btn">Send Message</a>
+            <button class="btn" type="submit">Send Message</button>
         </form>
-
     </section>
+
     <footer>
-
-        ©️VasudhaSaikar Built with Html & Css
-
+        2026 Vasudha Saikar - Built with HTML and CSS
     </footer>
-
-
 </body>
 
 </html>
